@@ -1,0 +1,140 @@
+<!-- 
+<div class="container mt-5">
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+    <form [formGroup]="signupForm" (ngSubmit)="signUp()" autocomplete="off">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input formControlName="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Email</label>
+          <input formControlName="email" type="email" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Mobile</label>
+            <input formControlName="mobile" type="number" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+
+       <div class="mt-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+      </div>
+      </div>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <div class="row">
+        <div class="offset-lg-1 col-lg-5">
+
+          <img src="../../assets/Mobile-login.jpeg" height="400px" width="400px">
+        </div>
+        <div class="col-lg-6">
+    <mat-card>
+      <mat-card-content>
+        <div class="header">
+          <P>Sign Into Your Account </P>
+        </div>
+        <form (ngSubmit)="signUp()" name="signupForm1" [formGroup]=" signupForm">
+    
+          <div class="emailInput">
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Name</mat-label>
+              <input formControlName="name" matInput placeholder="Enter Name" required />
+              <mat-error *ngIf="!signupForm.controls['name'].valid">
+                Name is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+    
+          <div class="emailInput">
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Email</mat-label>
+              <input formControlName="email" matInput placeholder="Enter email address" required />
+              <mat-error *ngIf="!signupForm.controls['email'].valid">
+                Email is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+    
+          <div class="emailInput">
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Mobile Number</mat-label>
+              <input formControlName="mobile" matInput placeholder="Enter Mobile Number" required />
+              <mat-error *ngIf="!signupForm.controls['name'].valid">
+                Mobile Number is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+    
+          <div>
+            <span>
+              <a class="text-link" class="aLink" routerLink="/auth/forgot-password">Forgot Password?</a>
+            </span>
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Password</mat-label>
+              <input formControlName="password" matInput [type]=" hide ? 'password' : 'text'" required />
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+                [attr.aria-pressed]="hide">
+                <!-- <mat-icon>
+                  {{hide ? 'visibility_off' : 'visibility'}}
+                </mat-icon> -->
+              </button> 
+              <mat-error *ngIf="!signupForm.controls['password'].valid">
+                Password is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+    
+          <button mat-flat-button color="primary" [disabled]="!signupForm.valid" >Register</button>
+        </form>
+    
+      
+      </mat-card-content>
+    </mat-card>
+    </div>
+    </div>
+    </div>
+    <!-- 
+    <div class="container mt-5">
+      <div class="row">
+        <div class="card">
+          <div class="card-body">
+            <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input formControlName="name" type="text" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp">
+    
+              </div>
+    
+              <div class="form-group">
+                <label for="exampleInputPassword1">Email</label>
+                <input formControlName="email" type="email" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Mobile</label>
+                <input formControlName="mobile" type="number" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+    
+              <div class="mt-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    

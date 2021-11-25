@@ -1,0 +1,445 @@
+.banner{
+    background-image: url('../../assets/xps-yNvVnPcurD8-unsplash.jpg');
+    height: 600px;
+    background-position: center top;
+    background-size: cover;
+}
+
+.content  h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.content{
+    top: 45%;
+    left: 20%;
+    position: absolute;
+}
+
+.content a{
+    text-decoration: none;
+    background-color: #fff;
+    color: var(--primary-color);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.content a:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.ABC{
+    padding: 50px 30px 50px 15px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.cell-view{
+    height: 250px;
+    height: 250px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 10000px;
+}
+
+.description .clr{
+    color: #b8cd06;
+    font-weight: bold;
+}
+
+.image{
+    float: left;
+    max-width: 309px;
+    width: 100%;
+    height: 270px;
+}
+.button .style-3{
+    background: #b8cd06;
+    color: #fff;
+}
+.button:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    background: inherit;
+    content: "";
+    opacity: .3;
+}
+
+.button span {
+    display: block;
+    position: relative;
+    left: 0;
+}
+
+.button.style-3 .icon, .button.style-4 .icon {
+    color: #fff;
+}
+
+.banner-shortcode.style-6:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.button.size-2 .text {
+    padding: 17px 30px 15px 30px;
+}
+.button.size-2 {
+    font-size: 11px;
+    line-height: 18px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
+
+.stepBox{
+    background-color: #000;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.stepBox h1{
+    color: var(--primary-color);
+}
+.stepBox p{
+    color: white ;
+    font-style: italic;
+    font-size: 20px;
+} 
+
+.foodbox{
+    padding: 10px 5px;
+}
+
+.foodbox img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.foodbox h1{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.viewmorebtn{
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: black;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:600px){
+   .banner {
+    height: 700px;
+    }
+}
+
+
+
+
+.wrapper .content h1 {
+    margin-left: 30px
+}
+/* 
+.card:hover .innercard img {
+    transform: rotate(20deg)
+} */
+
+.innercard img {
+    transition: all 0.5s
+}
+
+.wrapper .content {
+    text-align: center;
+    color: #fff;
+    font-family: 'Girassol', cursive;
+    text-transform: uppercase;
+    font-size: 23px;
+    line-height: 10px;
+    margin-bottom: 20px
+}
+
+
+.product-item {
+    margin-bottom: 80px;
+}
+
+.product-item figure {
+
+    position: relative; 
+    
+    /* -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s; */
+    transition: all 0.4s ease 0s;
+    position: relative;
+}
+
+.product-item figure img {
+    width: 316px;
+    height: 300px;
+}
+
+.product-item .pi-meta {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: #414141;
+    padding: 10px 0;
+    opacity: 0;
+    /* -webkit-transform: translateY(110%);
+    -ms-transform: translateY(110%); */
+    transform: translateY(110%);
+    /* -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s; */
+    transition: all 0.4s ease 0s;
+}
+
+.product-item figure:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    border: 2px solid #ebebeb;
+}
+
+.product-item .product-info {
+    text-align: center;
+}
+
+.product-item .product-info h6 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.product-item .product-info p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #414141;
+}
+.site-btn.btn-line {
+    background: transparent;
+    border: 2px solid #414141;
+    color: #414141;
+    padding: 12px 20px;
+}
+
+.site-btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 12px 30px;
+    min-width: 138px;
+    font-weight: 500;
+    border: none;
+    background: #414141;
+    cursor: pointer;
+    line-height: normal;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+
+.card {
+    background-color: #fff;
+    padding: 10px;
+    border: none;
+    height: 400px;
+    position: relative;
+    cursor: pointer
+}
+
+.product-image img {
+    position: absolute;
+    top: -50px;
+    width: 400px;
+    transition: all 0.5s
+}
+
+.card:hover .product-image img {
+    transform: rotate(10deg)
+}
+
+label.radio {
+    cursor: pointer
+}
+
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label:nth-child(1) span {
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    display: inline-block;
+    background-color: gray;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 2s
+}
+
+label:nth-child(2) span {
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: #000;
+    display: inline-block;
+    color: #8f37aa;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 2s
+}
+
+label:nth-child(3) span {
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid pink;
+    background-color: pink;
+    display: inline-block;
+    color: #8f37aa;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 2s
+}
+
+label.radio input:checked+span::after {
+    content: '\f179';
+    font-family: 'fontawesome';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    font-size: 11px;
+    color: #fff
+}
+
+.button {
+    width: 200px;
+    height: 48px;
+    border: none;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 20px;
+    background-color: #126ef9;
+    color: #fff
+}
+
+.button i {
+    margin-top: 1px
+}
+
+@media (max-width:770px) {
+    .product-image img {
+        position: absolute;
+        top: 130px;
+        right: 10px;
+        width: 250px
+    }
+}
+
+@media (max-width:470px) {
+    .product-image img {
+        position: absolute;
+        top: 190px;
+        right: 10px;
+        width: 150px
+    }
+}
+
+.height-100 {
+    height: 100vh
+}
+
+.card2 {
+    width: 100%;
+    border: none;
+    height: 405px;
+    max-width: 380px;
+    overflow: hidden;
+    position: relative;
+    /* display: flex; */
+    cursor: pointer;
+    justify-content: center;
+    transition: all ease 0.4s
+}
+
+.card2 img {
+    transition: all ease 0.4s
+}
+
+.card2:hover img {
+    margin-top: -15px
+}
+
+.card2 .content {
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    bottom: -60%;
+    margin-left: -8px;
+    transition: all ease 0.5s;
+    border-radius: 4px;
+    box-shadow: 0px -3px 4px rgba(10, 10, 10, 0.09)
+}
+
+.card2 .content .category {
+    font-size: 17px;
+    font-weight: 600
+}
+
+.card2 .content .price {
+    font-size: 17px;
+    font-weight: 500;
+    color: #0d6efd
+}
+
+.card2 .content p {
+    font-weight: 500;
+    font-size: 12px
+}
+
+.card2:hover .content {
+    bottom: 0%
+}
+
+.buttons button {
+    border-radius: 1px;
+    margin-bottom: 10px;
+    transition: all ease 0.3s
+}
+
+.content {
+    padding: 10px
+}
+
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }

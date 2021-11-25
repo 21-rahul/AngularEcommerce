@@ -1,0 +1,67 @@
+<!-- 
+<div class="mt-5">
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr class="bg-dark text-white">
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Amount</th>
+            <th>Quantity</th>
+         </tr>
+    </thead>
+    <tbody *ngFor="let item of arrProducts">
+        
+            <td>{{item.id}}</td>
+            <td>{{item.ProductName}}</td>
+            <td>{{item.Amount}}</td>
+            <td>{{item.Quantity}}</td>
+      
+    </tbody>
+</table>
+</div>
+
+<input type="text" [(ngModel)]="istrforid">
+
+<button type="submit" (click)="RouteBasedOnId()">SUBMIT</button> 
+<br>
+<br>
+
+<input type="text" [(ngModel)]="istrforName">
+<button type="submit" (click)="displayBasedOnName()">SUBMIT</button> 
+
+<br>
+<button type="submit" (click)="DisplayAll()">Display all</button>  -->
+
+<div class="container">
+    <div class="row">
+        <div class="form-group has-search main">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" class="form-control" placeholder="Search" [(ngModel)]="Title"  (input)="search()">
+           <!-- {{Title}} -->
+           
+        </div>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let fd of arrElectronics">
+            <div class="foodbox">
+
+                <div class="foodbox mt-3 mb-3">
+                    <img src="{{fd.Image}}">
+                    <h1>{{fd.Title}}</h1>
+                    <!-- <p>{{fd.Desciption}}</p> -->
+                    <p>{{fd.Price}}</p>
+                 <div style="text-align: center;">
+                    <a class="buttprod" [routerLink]="['/items',fd.Title]" >Click me</a>
+                </div>
+                    <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]">Buy Now &nbsp;<i class="bi bi-bag"></i></a> -->
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>

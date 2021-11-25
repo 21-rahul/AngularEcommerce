@@ -1,0 +1,114 @@
+<!-- <nav>
+  <div class="nav-center">
+    <div class="nav-header">
+      <h1>RkElectro</h1>
+      <button class="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  
+
+
+    <ul class="links">
+      <li>
+        <a routerLinkActive="active" routerLink="/">home</a>
+      </li>
+      <li>
+        <a routerLinkActive="active" routerLink="about">about</a>
+      </li>
+      <li>
+        <a routerLinkActive="active" routerLink="product">product</a>
+      </li>
+      <li>
+        <a routerLinkActive="active" routerLink="contact">contact</a>
+      </li>
+      <li>
+        <a routerLinkActive="active" (click)="LoginForAuthGuard()" [routerLink]="['/userLogin']"
+          [queryParams]="{uid:strUserId,pwd:passwordForQuery}">User Login</a>
+      </li>
+    
+      
+    </ul>
+
+      <ul class="links">
+        <li>
+          <a routerLinkActive="active" routerLink="signup">Register</a>
+      </li>
+       
+          <li>   
+        <a routerLink="login">Login</a>
+      </li>
+      <li>
+          <a  href="#" (click)="LogoutForAuthGuard()">Logout</a>
+    </li>
+
+    <li>
+      <a routerLinkActive="active" routerLink="dashboard">Admin Dashboard</a>
+  </li>
+      </ul>
+     
+  </div>
+</nav> -->
+
+
+<header class="section-header">
+  <section class="header-main border-bottom">
+      <div class="container-fluid">
+          <div class="row align-items-center">
+              <div class="col-lg-3 col-sm-4 col-md-4 col-5"> <a href="#" class="brand-wrap" data-abc="true">
+                     <span class="logo">RkElectro</span> </a> </div>
+              <div class="col-lg-4 col-xl-5 col-sm-8 col-md-4 d-none d-md-block">
+                  <form action="#" class="search-wrap">
+                      <div class="input-group w-100"> <input type="text" class="form-control search-form" style="width:55%;" placeholder="Search">
+                          <div class="input-group-append"> <button class="btn btn-primary search-button" type="submit"> <i class="fa fa-search" aria-hidden="true"></i> </button> </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="col-lg-5 col-xl-4 col-sm-8 col-md-4 col-7">
+                  <div class="d-flex justify-content-end"> 
+                      <a target="_blank" href="#" data-abc="true" class="nav-link widget-header"> <i class="fas fa fa-whatsapp"></i></a>
+                       <span class="vl"></span>
+                     <span class="vl"></span> 
+                     <!-- <button routerLink="/login"  routerLinkActive="active" (click)="logOutForAuthGuard()" style="color: white;">Logout</button> -->
+                     <a routerLink="cart" class="btn1">
+                      <i style="    font-size: 21px;
+                      padding-top: 4px;" class="fas fa-cart-plus"></i>
+                      {{totalItem}}
+                    </a>
+                      <a class="nav-link nav-user-img" [routerLink]="['/login']" style="color: white;" (click)="logInForAuthGuard()"><span class="login">LOGIN</span>
+                        
+                    </a>
+                    <a class="nav-link nav-user-img" routerLink="/login" routerLinkActive="active" (click)="logOutForAuthGuard()"><span class="login">LOGOUT</span>
+                        </a>
+                       
+                        <!-- <a class="nav-link nav-user-img" routerLink="signup" routerLinkActive="active"><span class="login">Register</span>
+                        </a> -->
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <nav class="navbar navbar-expand-md navbar-main border-bottom">
+      <div class="container-fluid">
+          <form class="d-md-none my-2">
+              <div class="input-group"> <input type="search" name="search" class="form-control" placeholder="Search" required="">
+                  <div class="input-group-append"> <button type="submit" class="btn btn-secondary"> <i class="fa fa-search"></i> </button> </div>
+              </div>
+          </form> <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#dropdown6" aria-expanded="false"> <span class="navbar-toggler-icon"></span> </button>
+          <div class="navbar-collapse collapse" id="dropdown6" style="">
+              <ul class="navbar-nav" style="margin:auto">
+                  <!-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" data-abc="true" aria-expanded="false">Laptops</a>
+                      <div class="dropdown-menu"> <a class="dropdown-item" href="" data-abc="true">Lenovo</a> <a class="dropdown-item" href="" data-abc="true">Dell</a> <a class="dropdown-item" href="" data-abc="true">HP</a> <a class="dropdown-item" href="" data-abc="true">Apple</a> </div>
+                  </li> -->
+                  <li class="nav-item"> <a class="nav-link" routerLinkActive="active" routerLink="/">Home</a> </li>
+                  <li class="nav-item"> <a class="nav-link" routerLinkActive="active" routerLink="about">About</a> </li>
+                  <li class="nav-item"> <a class="nav-link" routerLinkActive="active" routerLink="contact">Contact</a> </li>
+                  <li class="nav-item"> <a class="nav-link" routerLinkActive="active" routerLink="product" >Product</a> </li>
+                  <li class="nav-item"> <a class="nav-link" routerLinkActive="active" routerLink="dashboard" >Dashboard</a> </li>
+              </ul>
+             
+          </div>
+      </div>
+  </nav>
+</header> 
